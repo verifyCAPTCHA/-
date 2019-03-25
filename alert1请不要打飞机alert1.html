@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<head>
+<script>
+function myFunction(x){
+	//console.log(x.value);
+	//document.body.innerText=unescape(x.value);
+	document.getElementById("rvho").innerText = x.value;
+	document.getElementById("echo").innerHtml = "<h3>sdfd</h3>"//x.value;
+	//console.log("</label>""+x.value+"\"<label>";)
+	//document.getElementById("rvho").innerText = unescape(x.value);
+}
+</script>
+</head>
+<body>
+
+<input value="<svg onload=alert(1)>" name="username" type="text" onfocus="myFunction(this)">
+</br>
+<b>innerText:</b><label id="rvho" for="用户输入">请不要打飞机</label>
+</br>
+<b>innerHtml:</b><label id="echo" name="feiji" for="用户输入">请不要打飞机</label>
+</body>
+</html>
